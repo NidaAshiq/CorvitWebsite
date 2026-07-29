@@ -23,10 +23,10 @@ export default function Navbar() {
 
           <div>
             <h2 className="text-lg sm:text-xl font-bold">
-              Corvit Systems
+              Corvit Tech
             </h2>
             <p className="text-xs text-red-100">
-              Faisalabad
+              Solutions
             </p>
           </div>
         </Link>

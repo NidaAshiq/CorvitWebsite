@@ -11,20 +11,18 @@ export default function Home() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
           Build Your Future with
           <span className="block text-red-600 mt-2">
-            Corvit Systems Faisalabad
+            Corvit Tech Solutions
           </span>
         </h1>
 
         {/* Description */}
         <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-600 leading-7 sm:leading-8 max-w-3xl mx-auto">
-          Learn in-demand IT skills from industry professionals. Join our
-          practical training programs in{" "}
-          <strong>Web Development</strong>,{" "}
-          <strong>Graphic Design</strong>,{" "}
-          <strong>Digital Marketing</strong>,{" "}
-          <strong>Cyber Security</strong>,{" "}
-          <strong>Artificial Intelligence</strong>, and many more to
-          kick-start your career with hands-on experience.
+          At <strong>Corvit Agency</strong>, we help businesses grow by providing
+          innovative and result-driven digital solutions. Our team specializes in
+          <strong> Website Development</strong>, <strong>Web Applications</strong>,{" "}
+          <strong>UI/UX Design</strong>, and <strong>Digital Marketing</strong> to
+          strengthen your online presence and help you achieve your business goals
+          with creativity, quality, and reliability.
         </p>
 
         {/* Buttons */}

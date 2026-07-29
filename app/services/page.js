@@ -111,80 +111,406 @@ const services = [
   },
 ];
 
+const packages = [
+  {
+    title: "Starter Lite Package",
+    subtitle: "Perfect for Reels, Shorts & Quick Promotions",
+    description:
+      "Short and impactful AI videos designed for Facebook, Instagram Reels, TikTok, YouTube Shorts and WhatsApp Marketing.",
+    duration: "Up to 30 Seconds",
+    quality: "720P HD / 1080P Full HD",
+    price: "PKR 2,000",
+    features: [
+      "AI Voice Over (English & Urdu)",
+      "Background Music",
+      "Logo Integration",
+      "Text Animation",
+      "Social Media Ready",
+      "1 Revision",
+    ],
+  },
+  {
+    title: "Starter Package",
+    subtitle: "Perfect for Social Media Promotions & Short Ads",
+    description:
+      "Professional AI videos for social media marketing and advertising.",
+    duration: "1 Minute",
+    quality: "720P HD / 1080P Full HD",
+    price: "PKR 4,000",
+    features: [
+      "AI Voice Over (Any Language)",
+      "Background Music",
+      "Logo Integration",
+      "Basic Motion Effects",
+      "Social Media Ready",
+      "2 Revisions",
+    ],
+  },
+  {
+    title: "Growth Package",
+    subtitle: "Ideal for Product Marketing & Business Promotion",
+    description:
+      "Professional promotional AI videos for products and businesses.",
+    duration: "Up to 1 Minute 30 Seconds",
+    quality: "1080P Full HD / 2K",
+    price: "PKR 6,000",
+    features: [
+      "Professional Script Assistance",
+      "Voice Over (Any Language)",
+      "Premium AI Visuals",
+      "Subtitles Included",
+      "Product Showcase",
+      "3 Revisions",
+    ],
+  },
+  {
+    title: "Premium Package",
+    subtitle: "Best for Brands & Corporate Marketing",
+    description:
+      "Premium quality AI videos with advanced branding features.",
+    duration: "2 Minutes",
+    quality: "1080P Full HD / 2K / 4K",
+    price: "PKR 8,000",
+    features: [
+      "AI Avatar Presenter",
+      "Premium AI Animation",
+      "Professional Editing",
+      "Commercial Usage Rights",
+      "Custom Branding",
+      "Priority Support",
+      "3 Revisions",
+    ],
+  },
+  {
+    title: "Enterprise Package",
+    subtitle: "For Companies, Training Videos & Advanced Campaigns",
+    description:
+      "Complete AI video production solution for businesses and organizations.",
+    duration: "3–5 Minutes+",
+    quality: "1080P Full HD / 2K / 4K",
+    price: "PKR 8,000",
+    features: [
+      "Custom Script Writing",
+      "AI Characters & Avatars",
+      "Multi-Language Voice Over",
+      "Advanced Visual Effects",
+      "Dedicated Project Manager",
+      "Priority Delivery",
+      "5 Revisions",
+    ],
+  },
+];
+
+const socialPackages = [
+  {
+    title: "Starter Package",
+    subtitle: "Best for Startups & Small Businesses",
+    duration: "10 Days",
+    price: "PKR 20,000",
+    platforms: [
+      "Facebook",
+      "Instagram",
+      "TikTok",
+      "YouTube",
+      "LinkedIn",
+      "Pinterest",
+    ],
+    features: [
+      "15 Professional Posts",
+      "15 Animated Posts",
+      "10 Reels / Short Videos",
+      "Content Creation & Copywriting",
+      "Daily Story Updates",
+      "Hashtag Research & Strategy",
+      "Profile Optimization",
+      "Basic SEO Optimization",
+      "Basic Inbox Management",
+      "Performance Report",
+    ],
+  },
+
+  {
+    title: "Growth Package",
+    subtitle: "Best for Growing Brands",
+    duration: "20 Days",
+    price: "PKR 40,000",
+    platforms: [
+      "Facebook",
+      "Instagram",
+      "TikTok",
+      "LinkedIn",
+      "Pinterest",
+    ],
+    features: [
+      "25 Professional Posts",
+      "25 Animated Posts",
+      "20 Reels / Short Videos",
+      "Advanced Content Strategy",
+      "Daily Stories",
+      "Professional Graphic Designing",
+      "Advanced SEO",
+      "Full Inbox Management",
+      "Competitor Analysis",
+      "Performance Report",
+      "Basic Ad Campaign Setup",
+    ],
+  },
+
+  {
+    title: "Premium Package",
+    subtitle: "Best for Established Businesses",
+    duration: "Monthly",
+    price: "PKR 100,000",
+    platforms: [
+      "Facebook",
+      "Instagram",
+      "TikTok",
+      "LinkedIn",
+      "Pinterest",
+      "YouTube",
+    ],
+    features: [
+      "40 Professional Posts",
+      "30 Animated Posts",
+      "30 Reels / AI Videos",
+      "Premium Graphic Designing",
+      "Advanced Content Marketing",
+      "Daily Stories",
+      "Complete Social Media Management",
+      "Advanced SEO",
+      "Complete Inbox Handling",
+      "Competitor Research",
+      "Analytics Reports",
+      "Priority Support",
+    ],
+  },
+
+  {
+    title: "Enterprise Package",
+    subtitle: "For Large Companies & Multi-Brand Businesses",
+    duration: "Monthly",
+    price: "Starting From PKR 150,000",
+    platforms: [
+      "Facebook",
+      "Instagram",
+      "TikTok",
+      "LinkedIn",
+      "Pinterest",
+      "YouTube",
+    ],
+    features: [
+      "All Premium Features",
+      "Custom Content Plan",
+      "AI Video Production",
+      "Dedicated Account Manager",
+      "Advanced Marketing Strategy",
+      "Multiple Campaign Management",
+      "Custom Reporting Dashboard",
+      "Priority Support & Consultation",
+    ],
+  },
+];
+
 export default function Page() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100 py-10 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <div className="text-center mb-10 lg:mb-14">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-600 leading-tight">
+        <div className="text-center mb-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-600">
             Corvit Tech Solutions
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg lg:text-xl text-gray-600 leading-7 max-w-3xl mx-auto">
-            Complete Website Development & Shopify Services Price List
-            <br className="hidden sm:block" />
-            Pakistan 2026
+          <p className="mt-4 text-gray-600 text-base sm:text-lg">
+            Complete Website Development & AI Video Production Services
           </p>
 
-          <div className="w-24 sm:w-28 h-1 bg-red-600 mx-auto mt-5 rounded-full"></div>
+          <div className="w-28 h-1 bg-red-600 rounded-full mx-auto mt-5"></div>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+        {/* Website Services */}
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+          Website Development Services
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col justify-between bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 sm:p-6"
+              className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition duration-300 flex flex-col"
             >
-              <div>
-                <h2 className="text-xl sm:text-2xl font-bold text-red-600 mb-4">
-                  {service.title}
-                </h2>
+              <h2 className="text-2xl font-bold text-red-600 mb-4">
+                {service.title}
+              </h2>
 
-                <p className="text-gray-600 text-sm sm:text-base leading-7 mb-5">
-                  <span className="font-semibold text-gray-800">
-                    Purpose:
-                  </span>{" "}
-                  {service.purpose}
-                </p>
+              <p className="text-gray-600 mb-4">
+                <strong>Purpose:</strong> {service.purpose}
+              </p>
 
-                <h3 className="font-semibold text-lg text-gray-800 mb-3">
-                  Features
-                </h3>
+              <h3 className="font-bold mb-3">Features</h3>
 
-                <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm sm:text-base">
-                  {service.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
+              <ul className="space-y-2 text-gray-700 flex-grow">
+                {service.features.map((feature, i) => (
+                  <li key={i}>✔ {feature}</li>
+                ))}
+              </ul>
 
               <div className="mt-6 bg-red-50 rounded-xl p-4">
                 <p className="font-bold text-red-600">
-                  💰 Market Price
-                </p>
-
-                <p className="text-gray-700 text-sm sm:text-base">
-                  {service.price}
+                   {service.price}
                 </p>
 
                 <hr className="my-3" />
 
-                <p className="font-bold text-red-600">
-                  ⏳ Delivery Time
-                </p>
-
-                <p className="text-gray-700 text-sm sm:text-base">
-                  {service.delivery}
+                <p className="font-semibold">
+                   {service.delivery}
                 </p>
               </div>
             </div>
           ))}
         </div>
+        {/* AI Video Packages */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+            AI Video Production Packages
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            {packages.map((pkg, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition duration-300 flex flex-col"
+              >
+                <div>
+                  <h2 className="text-2xl font-bold text-red-600">
+                    {pkg.title}
+                  </h2>
+
+                  <p className="text-sm font-semibold text-gray-700 mt-2">
+                    {pkg.subtitle}
+                  </p>
+
+                  <p className="text-gray-600 mt-4 leading-7">
+                    {pkg.description}
+                  </p>
+
+                  <div className="mt-5 space-y-2">
+                    <p>
+                      <span className="font-semibold"> Duration:</span>{" "}
+                      {pkg.duration}
+                    </p>
+
+                    <p>
+                      <span className="font-semibold"> Video Quality:</span>{" "}
+                      {pkg.quality}
+                    </p>
+                  </div>
+
+                  <h3 className="text-lg font-bold mt-6 mb-3">
+                    Features
+                  </h3>
+
+                  <ul className="space-y-2 text-gray-700">
+                    {pkg.features.map((feature, i) => (
+                      <li key={i}>✔ {feature}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-6 bg-red-50 rounded-xl p-4 border border-red-100">
+                  <p className="text-xl font-bold text-red-600">
+                     {pkg.price}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+
+        {/* Social Media Management */}
+
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-red-600">
+              Social Media Management Packages
+            </h2>
+
+            <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
+              Professional Social Media Management for Facebook, Instagram, TikTok,
+              YouTube, LinkedIn & Pinterest.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+            {socialPackages.map((pkg, index) => (
+
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col"
+              >
+
+                <h2 className="text-2xl font-bold text-red-600">
+                  {pkg.title}
+                </h2>
+
+                <p className="text-sm font-semibold text-gray-700 mt-2">
+                  {pkg.subtitle}
+                </p>
+
+                <div className="mt-4 space-y-2">
+                  <p>
+                    <span className="font-bold"> Duration:</span> {pkg.duration}
+                  </p>
+
+                  <p>
+                    <span className="font-bold"> Price:</span> {pkg.price}
+                  </p>
+                </div>
+
+                <div className="mt-5">
+                  <h3 className="font-bold text-lg">
+                    Platforms
+                  </h3>
+
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {pkg.platforms.map((platform, i) => (
+                      <span
+                        key={i}
+                        className="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-semibold"
+                      >
+                        {platform}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-6 flex-grow">
+                  <h3 className="font-bold text-lg mb-3">
+                    Features
+                  </h3>
+
+                  <ul className="space-y-2 text-gray-700">
+                    {pkg.features.map((feature, i) => (
+                      <li key={i}>✔ {feature}</li>
+                    ))}
+                  </ul>
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+        </div>
+
+
+
 
       </div>
+
     </section>
   );
 }
