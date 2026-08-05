@@ -591,50 +591,58 @@ export default function Page() {
     
       {/* CCNA Packages */}
 
+{/* ===================== CCNA Training Packages ===================== */}
+
 <div className="mt-20">
+  {/* Heading */}
   <div className="text-center mb-12">
     <h2 className="text-3xl sm:text-4xl font-extrabold text-red-600">
       CCNA Training Packages
     </h2>
 
     <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
-      Choose the perfect CCNA package based on your learning goals. From
-      beginner-level networking concepts to advanced Cisco practical labs,
-      interview preparation, and career support.
+      Build your networking career with our industry-focused CCNA training
+      packages. Learn Cisco networking from basic concepts to advanced
+      practical labs with expert instructors.
     </p>
 
     <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
   </div>
 
+  {/* Cards */}
   <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
     {ccnaPackages.map((pkg, index) => (
       <div
         key={index}
-        className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+        className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 flex flex-col h-full hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
       >
-        <h3 className="text-2xl font-bold text-red-600 mb-3">
-          {pkg.title}
-        </h3>
+        {/* Content */}
+        <div className="flex-grow">
+          <h3 className="text-2xl font-bold text-red-600 mb-3">
+            {pkg.title}
+          </h3>
 
-        <p className="text-gray-600 mb-4 leading-7">
-          {pkg.description}
-        </p>
+          <p className="text-gray-600 leading-7 mb-5">
+            {pkg.description}
+          </p>
 
-        <div className="bg-red-50 rounded-xl p-3 mb-5">
-          <p className="font-bold text-red-600">💰 Price</p>
-          <p className="text-gray-700">{pkg.price}</p>
+          <div className="bg-red-50 rounded-xl p-4 mb-5">
+            <p className="font-bold text-red-600">💰 Price</p>
+            <p className="text-gray-700">{pkg.price}</p>
+          </div>
+
+          <h4 className="font-semibold text-lg mb-3">
+            Services Included
+          </h4>
+
+          <ul className="space-y-2 text-gray-700">
+            {pkg.features.map((feature, i) => (
+              <li key={i}>✔ {feature}</li>
+            ))}
+          </ul>
         </div>
 
-        <h4 className="font-semibold text-lg mb-3">
-          Services Included
-        </h4>
-
-        <ul className="space-y-2 text-gray-700">
-          {pkg.features.map((feature, i) => (
-            <li key={i}>✔ {feature}</li>
-          ))}
-        </ul>
-
+        {/* Button */}
         <button className="mt-6 w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition duration-300">
           Enroll Now
         </button>
