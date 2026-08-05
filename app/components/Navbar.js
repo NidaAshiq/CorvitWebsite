@@ -65,7 +65,7 @@ export default function Navbar() {
               href="/contact"
               className="hover:text-yellow-300 transition duration-300"
             >
-              Contact
+              Contact 
             </Link>
           </li>
         </ul>

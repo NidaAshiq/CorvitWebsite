@@ -311,6 +311,86 @@ const socialPackages = [
   },
 ];
 
+const ccnaPackages = [
+  {
+    title: "Basic Package",
+    price: "PKR 20,000",
+    description:
+      "Perfect for beginners who want to start their networking career with CCNA fundamentals.",
+    features: [
+      "CCNA 200-301 Complete Theory",
+      "Networking Fundamentals",
+      "IPv4 & IPv6",
+      "Subnetting",
+      "Basic Routing & Switching",
+      "PDF Notes",
+      "Weekly Assignments",
+      "Course Completion Certificate",
+    ],
+  },
+  {
+    title: "Standard Package",
+    price: "PKR 35,000",
+    description:
+      "Ideal for students who want practical networking skills along with complete CCNA training.",
+    features: [
+      "Everything in Basic Package",
+      "Practical Lab Sessions",
+      "Cisco Packet Tracer Labs",
+      "VLAN Configuration",
+      "Routing Protocols (OSPF)",
+      "NAT & ACL",
+      "DHCP & DNS",
+      "Mock Tests",
+      "Interview Preparation",
+      "Course Completion Certificate",
+    ],
+  },
+  {
+    title: "Premium Package",
+    price: "PKR 50,000",
+    description:
+      "Best choice for students preparing for jobs and Cisco certification with advanced practical training.",
+    features: [
+      "Everything in Standard Package",
+      "Real Cisco Device Practice",
+      "Advanced Troubleshooting",
+      "Wireless Networking",
+      "Network Security",
+      "SSH & Port Security",
+      "Network Automation Basics",
+      "Resume Building",
+      "Job Placement Assistance",
+      "Cisco Exam Guidance",
+      "One-to-One Mentoring",
+      "Certificate of Course Completion",
+    ],
+  },
+  {
+    title: "Professional Package",
+    price: "PKR 65,000",
+    description:
+      "Complete career-focused CCNA package with advanced labs, interview preparation, and career support.",
+    features: [
+      "Complete CCNA 200-301 Training",
+      "Unlimited Practical Labs",
+      "Real Cisco Rack Practice",
+      "Advanced Routing & Switching",
+      "Network Security",
+      "Wireless Networking",
+      "Automation Fundamentals",
+      "Mock Exams",
+      "Interview Preparation",
+      "CV & LinkedIn Optimization",
+      "Internship Support",
+      "Job Placement Assistance",
+      "Cisco Certification Exam Guidance",
+      "Premium Study Material",
+      "Lifetime Technical Support",
+    ],
+  },
+];
+
 export default function Page() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100 py-10 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8">
@@ -507,6 +587,61 @@ export default function Page() {
         </div>
 
 
+
+    
+      {/* CCNA Packages */}
+
+<div className="mt-20">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl sm:text-4xl font-extrabold text-red-600">
+      CCNA Training Packages
+    </h2>
+
+    <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
+      Choose the perfect CCNA package based on your learning goals. From
+      beginner-level networking concepts to advanced Cisco practical labs,
+      interview preparation, and career support.
+    </p>
+
+    <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+    {ccnaPackages.map((pkg, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+      >
+        <h3 className="text-2xl font-bold text-red-600 mb-3">
+          {pkg.title}
+        </h3>
+
+        <p className="text-gray-600 mb-4 leading-7">
+          {pkg.description}
+        </p>
+
+        <div className="bg-red-50 rounded-xl p-3 mb-5">
+          <p className="font-bold text-red-600">💰 Price</p>
+          <p className="text-gray-700">{pkg.price}</p>
+        </div>
+
+        <h4 className="font-semibold text-lg mb-3">
+          Services Included
+        </h4>
+
+        <ul className="space-y-2 text-gray-700">
+          {pkg.features.map((feature, i) => (
+            <li key={i}>✔ {feature}</li>
+          ))}
+        </ul>
+
+        <button className="mt-6 w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition duration-300">
+          Enroll Now
+        </button>
+      </div>
+    ))}
+  </div>
+</div>
 
 
       </div>
