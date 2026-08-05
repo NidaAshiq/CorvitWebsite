@@ -642,10 +642,7 @@ export default function Page() {
           </ul>
         </div>
 
-        {/* Button */}
-        <button className="mt-6 w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition duration-300">
-          Enroll Now
-        </button>
+      
       </div>
     ))}
   </div>
