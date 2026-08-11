@@ -56,7 +56,7 @@ const Page = () => {
                 </h3>
 
                 <p className="text-gray-600 mt-1 break-all">
-                  info@corvitfsd.com
+                  Services@corvittech.com
                 </p>
               </div>
 

@@ -496,13 +496,13 @@ export default function Page() {
 
               <div className="mt-6 bg-red-50 rounded-xl p-4">
                 <p className="font-bold text-red-600">
-                   {service.price}
+                  {service.price}
                 </p>
 
                 <hr className="my-3" />
 
                 <p className="font-semibold">
-                   {service.delivery}
+                  {service.delivery}
                 </p>
               </div>
             </div>
@@ -558,7 +558,7 @@ export default function Page() {
 
                 <div className="mt-6 bg-red-50 rounded-xl p-4 border border-red-100">
                   <p className="text-xl font-bold text-red-600">
-                     {pkg.price}
+                    {pkg.price}
                   </p>
                 </div>
               </div>
@@ -636,8 +636,7 @@ export default function Page() {
                     ))}
                   </ul>
                 </div>
-
-              </div>
+                </div>
 
             ))}
 
@@ -646,174 +645,166 @@ export default function Page() {
 
 
 
-    
-      {/* CCNA Packages */}
 
-{/* ===================== CCNA Training Packages ===================== */}
+        {/* CCNA Packages */}
 
-<div className="mt-20">
-  {/* Heading */}
-  <div className="text-center mb-12">
-    <h2 className="text-3xl sm:text-4xl font-extrabold text-red-600">
-      CCNA Training Packages
-    </h2>
+        {/* ===================== CCNA Training Packages ===================== */}
 
-    <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
-      Build your networking career with our industry-focused CCNA training
-      packages. Learn Cisco networking from basic concepts to advanced
-      practical labs with expert instructors.
-    </p>
+        <div className="mt-20">
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-red-600">
+              CCNA Training Packages
+            </h2>
 
-    <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
-  </div>
+            <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
+              Build your networking career with our industry-focused CCNA training
+              packages. Learn Cisco networking from basic concepts to advanced
+              practical labs with expert instructors.
+            </p>
 
-  {/* Cards */}
-  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-    {ccnaPackages.map((pkg, index) => (
-      <div
-        key={index}
-        className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 flex flex-col h-full hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
-      >
-        {/* Content */}
-        <div className="flex-grow">
-          <h3 className="text-2xl font-bold text-red-600 mb-3">
-            {pkg.title}
-          </h3>
-
-          <p className="text-gray-600 leading-7 mb-5">
-            {pkg.description}
-          </p>
-
-          <div className="bg-red-50 rounded-xl p-4 mb-5">
-            <p className="font-bold text-red-600">💰 Price</p>
-            <p className="text-gray-700">{pkg.price}</p>
+            <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
           </div>
 
-          <h4 className="font-semibold text-lg mb-3">
-            Services Included
-          </h4>
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {ccnaPackages.map((pkg, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 flex flex-col h-full hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+              >
+                {/* Content */}
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold text-red-600 mb-3">
+                    {pkg.title}
+                  </h3>
 
-          <ul className="space-y-2 text-gray-700">
-            {pkg.features.map((feature, i) => (
-              <li key={i}>✔ {feature}</li>
+                  <p className="text-gray-600 leading-7 mb-5">
+                    {pkg.description}
+                  </p>
+
+                  <div className="bg-red-50 rounded-xl p-4 mb-5">
+                    <p className="font-bold text-red-600">💰 Price</p>
+                    <p className="text-gray-700">{pkg.price}</p>
+                  </div>
+
+                  <h4 className="font-semibold text-lg mb-3">
+                    Services Included
+                  </h4>
+
+                  <ul className="space-y-2 text-gray-700">
+                    {pkg.features.map((feature, i) => (
+                      <li key={i}>✔ {feature}</li>
+                    ))}
+                  </ul>
+                </div>
+                </div>
             ))}
-          </ul>
+          </div>
         </div>
-
-      
-      </div>
-    ))}
-  </div>
-</div>
 
 
       </div>
 
       {/* ================= CYBER SECURITY PACKAGES ================= */}
 
-<div className="mt-20">
+      <div className="mt-20">
 
-  {/* Heading */}
+        {/* Heading */}
 
-  <div className="text-center mb-12 px-2">
+        <div className="text-center mb-12 px-2">
 
-    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-600">
-      Cyber Security Packages
-    </h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-600">
+            Cyber Security Packages
+          </h2>
 
-    <p className="mt-4 text-sm sm:text-base lg:text-lg text-gray-600 leading-7 max-w-3xl mx-auto">
-      Protect your digital environment with professional security
-      assessments, vulnerability testing, penetration testing, and
-      advanced security solutions.
-    </p>
-
-    <div className="w-24 h-1 bg-red-600 mx-auto mt-5 rounded-full"></div>
-
-  </div>
-
-
-  {/* Cyber Security Cards */}
-
-  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
-
-    {cyberSecurityPackages.map((pkg, index) => (
-
-      <div
-        key={index}
-        className="flex flex-col bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 sm:p-6"
-      >
-
-        {/* Package Title */}
-
-        <h3 className="text-xl sm:text-2xl font-bold text-red-600 mb-4">
-          {pkg.title}
-        </h3>
-
-
-        {/* Price */}
-
-        <div className="bg-red-50 rounded-xl p-4 mb-5">
-
-          <p className="font-bold text-red-600 text-lg">
-            💰 Price
+          <p className="mt-4 text-sm sm:text-base lg:text-lg text-gray-600 leading-7 max-w-3xl mx-auto">
+            Protect your digital environment with professional security
+            assessments, vulnerability testing, penetration testing, and
+            advanced security solutions.
           </p>
 
-          <p className="text-gray-800 font-semibold mt-1">
-            {pkg.price}
-          </p>
+          <div className="w-24 h-1 bg-red-600 mx-auto mt-5 rounded-full"></div>
 
         </div>
 
 
-        {/* Services */}
+        {/* Cyber Security Cards */}
 
-        <h4 className="text-lg font-bold text-gray-800 mb-4">
-          Services Included
-        </h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
 
-        <ul className="space-y-2 text-sm sm:text-base text-gray-700 flex-grow">
+          {cyberSecurityPackages.map((pkg, index) => (
 
-          {pkg.features.map((feature, i) => (
-
-            <li
-              key={i}
-              className="flex items-start gap-2 leading-6"
+            <div
+              key={index}
+              className="flex flex-col bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 sm:p-6"
             >
 
-              <span className="text-red-600 font-bold">
-                ✓
-              </span>
+              {/* Package Title */}
 
-              <span>
-                {feature}
-              </span>
-
-            </li>
-
-          ))}
-
-        </ul>
+              <h3 className="text-xl sm:text-2xl font-bold text-red-600 mb-4">
+                {pkg.title}
+              </h3>
 
 
-        {/* Punchline */}
+              {/* Price */}
 
-        <div className="mt-6 bg-gray-50 border-l-4 border-red-600 rounded-lg p-4">
+              <div className="bg-red-50 rounded-xl p-4 mb-5">
 
-          <p className="text-gray-700 italic font-medium text-sm sm:text-base">
-            “{pkg.punchline}”
-          </p>
+                <p className="font-bold text-red-600 text-lg">
+                  💰 Price
+                </p>
 
-        </div>
+                <p className="text-gray-800 font-semibold mt-1">
+                  {pkg.price}
+                </p>
+
+              </div>
 
 
-      </div>
+              {/* Services */}
 
-    ))}
+              <h4 className="text-lg font-bold text-gray-800 mb-4">
+                Services Included
+              </h4>
 
-  </div>
+              <ul className="space-y-2 text-sm sm:text-base text-gray-700 flex-grow">
 
-</div>
+                {pkg.features.map((feature, i) => (
 
-    </section>
+                  <li
+                    key={i}
+                    className="flex items-start gap-2 leading-6"
+                  >
+
+                    <span className="text-red-600 font-bold">
+                      ✓
+                    </span>
+
+                    <span>
+                      {feature}
+                    </span>
+
+                  </li>
+
+                ))}
+
+              </ul>
+
+
+              {/* Punchline */}
+
+              <div className="mt-6 bg-gray-50 border-l-4 border-red-600 rounded-lg p-4">
+
+                <p className="text-gray-700 italic font-medium text-sm sm:text-base">
+                  “{pkg.punchline}”
+                </p>
+
+              </div>
+                  </div>
+                ))}
+                </div>
+                </div>
+                </section>
   );
 }
