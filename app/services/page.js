@@ -391,6 +391,64 @@ const ccnaPackages = [
   },
 ];
 
+const cyberSecurityPackages = [
+  {
+    title: "Basic Security",
+    price: "PKR 25,000",
+    punchline: "Identify Risks. Strengthen Your Security.",
+    features: [
+      "Security Risk Assessment",
+      "Website Security Check",
+      "Network Security Review",
+      "Vulnerability Scanning",
+      "Malware & Threat Assessment",
+      "Basic Firewall Review",
+      "Security Recommendations",
+      "Security Assessment Report",
+    ],
+  },
+
+  {
+    title: "Standard Security",
+    price: "PKR 60,000",
+    punchline: "Find Vulnerabilities Before Hackers Do.",
+    features: [
+      "Everything in Basic",
+      "Vulnerability Assessment",
+      "Web Application VAPT",
+      "Network Security Assessment",
+      "Firewall & Endpoint Security Review",
+      "Security Hardening Recommendations",
+      "Phishing Awareness Assessment",
+      "Detailed Technical Report",
+      "Remediation Guidance",
+      "1 Re-Test After Fixes",
+    ],
+  },
+
+  {
+    title: "Premium Security",
+    price: "PKR 120,000",
+    punchline: "Advanced Protection for Your Digital Environment.",
+    features: [
+      "Everything in Standard",
+      "Advanced VAPT",
+      "Web & API Security Testing",
+      "Network Penetration Testing",
+      "Cloud Security Assessment",
+      "Security Configuration Review",
+      "Threat Detection & Response",
+      "Incident Response Support",
+      "Security Monitoring",
+      "SIEM/SOC Assessment",
+      "Compliance Readiness Review",
+      "Executive & Technical Reports",
+      "2 Re-Tests After Fixes",
+      "Priority Support",
+    ],
+  },
+];
+
 export default function Page() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100 py-10 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8">
@@ -650,6 +708,111 @@ export default function Page() {
 
 
       </div>
+
+      {/* ================= CYBER SECURITY PACKAGES ================= */}
+
+<div className="mt-20">
+
+  {/* Heading */}
+
+  <div className="text-center mb-12 px-2">
+
+    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-600">
+      Cyber Security Packages
+    </h2>
+
+    <p className="mt-4 text-sm sm:text-base lg:text-lg text-gray-600 leading-7 max-w-3xl mx-auto">
+      Protect your digital environment with professional security
+      assessments, vulnerability testing, penetration testing, and
+      advanced security solutions.
+    </p>
+
+    <div className="w-24 h-1 bg-red-600 mx-auto mt-5 rounded-full"></div>
+
+  </div>
+
+
+  {/* Cyber Security Cards */}
+
+  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+
+    {cyberSecurityPackages.map((pkg, index) => (
+
+      <div
+        key={index}
+        className="flex flex-col bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 sm:p-6"
+      >
+
+        {/* Package Title */}
+
+        <h3 className="text-xl sm:text-2xl font-bold text-red-600 mb-4">
+          {pkg.title}
+        </h3>
+
+
+        {/* Price */}
+
+        <div className="bg-red-50 rounded-xl p-4 mb-5">
+
+          <p className="font-bold text-red-600 text-lg">
+            💰 Price
+          </p>
+
+          <p className="text-gray-800 font-semibold mt-1">
+            {pkg.price}
+          </p>
+
+        </div>
+
+
+        {/* Services */}
+
+        <h4 className="text-lg font-bold text-gray-800 mb-4">
+          Services Included
+        </h4>
+
+        <ul className="space-y-2 text-sm sm:text-base text-gray-700 flex-grow">
+
+          {pkg.features.map((feature, i) => (
+
+            <li
+              key={i}
+              className="flex items-start gap-2 leading-6"
+            >
+
+              <span className="text-red-600 font-bold">
+                ✓
+              </span>
+
+              <span>
+                {feature}
+              </span>
+
+            </li>
+
+          ))}
+
+        </ul>
+
+
+        {/* Punchline */}
+
+        <div className="mt-6 bg-gray-50 border-l-4 border-red-600 rounded-lg p-4">
+
+          <p className="text-gray-700 italic font-medium text-sm sm:text-base">
+            “{pkg.punchline}”
+          </p>
+
+        </div>
+
+
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
 
     </section>
   );
