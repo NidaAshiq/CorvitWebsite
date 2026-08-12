@@ -774,32 +774,7 @@ export default function ServicesPage() {
       </section>
 
 
-      {/* =================================================
-          BOTTOM CTA
-      ================================================= */}
-
-      <section className="services-cta">
-
-        <div>
-          <span>
-            CORVIT TECH SOLUTIONS
-          </span>
-
-          <h2>
-            Ready to Build Something Powerful?
-          </h2>
-
-          <p>
-            Choose a service package and let's
-            turn your idea into reality.
-          </p>
-
-          <button>
-            Contact Us
-          </button>
-        </div>
-
-      </section>
+  
 
     </main>
   );
