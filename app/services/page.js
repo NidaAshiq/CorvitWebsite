@@ -1,9 +1,27 @@
+"use client";
+
 import React from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  EffectCoverflow,
+  Pagination,
+  Autoplay,
+} from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+/* =====================================================
+   WEBSITE DEVELOPMENT PACKAGES
+===================================================== */
 
 const services = [
   {
     title: "Landing Page",
-    purpose: "Designed for advertising campaigns and lead generation.",
+    purpose:
+      "Designed for advertising campaigns and lead generation.",
     features: [
       "Single-page Design",
       "WhatsApp Button Integration",
@@ -13,9 +31,11 @@ const services = [
     price: "PKR 15,000 – 30,000",
     delivery: "1–3 Days",
   },
+
   {
     title: "Portfolio Website",
-    purpose: "Showcase personal work, projects, and achievements.",
+    purpose:
+      "Showcase personal work, projects, and achievements.",
     features: [
       "About Section",
       "Project Gallery",
@@ -25,9 +45,11 @@ const services = [
     price: "PKR 25,000 – 45,000",
     delivery: "3–5 Days",
   },
+
   {
     title: "Business Website",
-    purpose: "Present company information and services online.",
+    purpose:
+      "Present company information and services online.",
     features: [
       "5–10 Pages",
       "WhatsApp Integration",
@@ -37,9 +59,11 @@ const services = [
     price: "PKR 35,000 – 60,000",
     delivery: "5–7 Days",
   },
+
   {
     title: "Corporate Website",
-    purpose: "Designed for large organizations and enterprises.",
+    purpose:
+      "Designed for large organizations and enterprises.",
     features: [
       "Departments Section",
       "Careers Portal",
@@ -49,9 +73,11 @@ const services = [
     price: "PKR 60,000 – 120,000",
     delivery: "7–10 Days",
   },
+
   {
     title: "E-Commerce Website",
-    purpose: "Sell products and services online.",
+    purpose:
+      "Sell products and services online.",
     features: [
       "Product Catalog",
       "Shopping Cart",
@@ -61,9 +87,11 @@ const services = [
     price: "PKR 50,000 – 100,000",
     delivery: "7–12 Days",
   },
+
   {
     title: "Educational Website (LMS)",
-    purpose: "For schools, academies, and online learning platforms.",
+    purpose:
+      "For schools, academies, and online learning platforms.",
     features: [
       "Course Management",
       "Student Portal",
@@ -73,9 +101,11 @@ const services = [
     price: "PKR 70,000 – 150,000+",
     delivery: "10–20 Days",
   },
+
   {
     title: "News & Magazine Website",
-    purpose: "Publish news, blogs, and articles.",
+    purpose:
+      "Publish news, blogs, and articles.",
     features: [
       "Categories Management",
       "Search Functionality",
@@ -85,9 +115,11 @@ const services = [
     price: "PKR 50,000 – 90,000",
     delivery: "7–10 Days",
   },
+
   {
     title: "Booking Website",
-    purpose: "Manage appointments and reservations online.",
+    purpose:
+      "Manage appointments and reservations online.",
     features: [
       "Booking Calendar",
       "Automated Notifications",
@@ -97,9 +129,11 @@ const services = [
     price: "PKR 45,000 – 80,000",
     delivery: "5–10 Days",
   },
+
   {
     title: "Membership Website",
-    purpose: "Offer subscription plans and exclusive content.",
+    purpose:
+      "Offer subscription plans and exclusive content.",
     features: [
       "User Registration & Login",
       "Membership Plans",
@@ -111,84 +145,86 @@ const services = [
   },
 ];
 
-const packages = [
+/* =====================================================
+   AI VIDEO PACKAGES
+===================================================== */
+
+const aiPackages = [
   {
     title: "Starter Lite Package",
-    subtitle: "Perfect for Reels, Shorts & Quick Promotions",
     description:
-      "Short and impactful AI videos designed for Facebook, Instagram Reels, TikTok, YouTube Shorts and WhatsApp Marketing.",
+      "Perfect for Reels, Shorts & Quick Promotions.",
     duration: "Up to 30 Seconds",
     quality: "720P HD / 1080P Full HD",
-    price: "PKR 2,000",
     features: [
-      "AI Voice Over (English & Urdu)",
-      "Background Music",
-      "Logo Integration",
-      "Text Animation",
-      "Social Media Ready",
+      "AI Voice Over (English and Urdu)",
+      "Background Music (On Demand)",
+      "Logo Integration (On Demand)",
+      "Text Animation (On Demand)",
+      "Social Media Ready Format",
       "1 Revision",
     ],
+    price: "Contact Us",
   },
+
   {
     title: "Starter Package",
-    subtitle: "Perfect for Social Media Promotions & Short Ads",
     description:
-      "Professional AI videos for social media marketing and advertising.",
+      "Perfect for Social Media Promotions & Short Ads.",
     duration: "1 Minute",
     quality: "720P HD / 1080P Full HD",
-    price: "PKR 4,000",
     features: [
       "AI Voice Over (Any Language)",
-      "Background Music",
-      "Logo Integration",
-      "Basic Motion Effects",
-      "Social Media Ready",
+      "Background Music (On Demand)",
+      "Logo Integration (On Demand)",
+      "Basic Motion Effects (On Demand)",
+      "Social Media Ready Format",
       "2 Revisions",
     ],
+    price: "PKR 2,000",
   },
+
   {
     title: "Growth Package",
-    subtitle: "Ideal for Product Marketing & Business Promotion",
     description:
-      "Professional promotional AI videos for products and businesses.",
+      "Ideal for Product Marketing & Business Promotion.",
     duration: "Up to 1 Minute 30 Seconds",
     quality: "1080P Full HD / 2K",
-    price: "PKR 6,000",
     features: [
       "Professional Script Assistance",
-      "Voice Over (Any Language)",
-      "Premium AI Visuals",
-      "Subtitles Included",
-      "Product Showcase",
+      "Urdu or English Voice Over",
+      "Premium AI Visuals (On Demand)",
+      "Subtitles Included (On Demand)",
+      "Product & Service Showcase",
       "3 Revisions",
     ],
+    price: "PKR 4,000",
   },
+
   {
     title: "Premium Package",
-    subtitle: "Best for Brands & Corporate Marketing",
     description:
-      "Premium quality AI videos with advanced branding features.",
+      "Best for Brands & Corporate Marketing.",
     duration: "2 Minutes",
     quality: "1080P Full HD / 2K / 4K",
-    price: "PKR 8,000",
     features: [
-      "AI Avatar Presenter",
-      "Premium AI Animation",
-      "Professional Editing",
+      "AI Avatar Presenter (On Demand)",
+      "Premium AI Animation (On Demand)",
+      "Professional Editing (On Demand)",
       "Commercial Usage Rights",
       "Custom Branding",
       "Priority Support",
       "3 Revisions",
     ],
+    price: "PKR 6,000",
   },
+
   {
     title: "Enterprise Package",
-    subtitle: "For Companies, Training Videos & Advanced Campaigns",
     description:
-      "Complete AI video production solution for businesses and organizations.",
-    duration: "3–5 Minutes+",
-    quality: "1080P Full HD / 2K / 4K",
-    price: "PKR 8,000",
+      "For Companies, Training Videos & Advanced Campaigns.",
+    duration: "3 Minutes to 5 Minutes+",
+    quality: "1080P / 2K / 4K",
     features: [
       "Custom Script Writing",
       "AI Characters & Avatars",
@@ -198,15 +234,20 @@ const packages = [
       "Priority Delivery",
       "5 Revisions",
     ],
+    price: "PKR 8,000",
   },
 ];
+
+/* =====================================================
+   SOCIAL MEDIA PACKAGES
+===================================================== */
 
 const socialPackages = [
   {
     title: "Starter Package",
-    subtitle: "Best for Startups & Small Businesses",
+    description:
+      "Best for Startups & Small Businesses.",
     duration: "10 Days",
-    price: "PKR 20,000",
     platforms: [
       "Facebook",
       "Instagram",
@@ -225,15 +266,16 @@ const socialPackages = [
       "Profile Optimization",
       "Basic SEO Optimization",
       "Basic Inbox Management",
-      "Performance Report",
+      "Monthly Performance Report",
     ],
+    price: "PKR 20,000 / 10 Days",
   },
 
   {
     title: "Growth Package",
-    subtitle: "Best for Growing Brands",
+    description:
+      "Best for Growing Brands.",
     duration: "20 Days",
-    price: "PKR 40,000",
     platforms: [
       "Facebook",
       "Instagram",
@@ -246,21 +288,22 @@ const socialPackages = [
       "25 Animated Posts",
       "20 Reels / Short Videos",
       "Advanced Content Strategy",
-      "Daily Stories",
+      "Daily Stories & Engagement Content",
       "Professional Graphic Designing",
-      "Advanced SEO",
+      "Advanced SEO Optimization",
       "Full Inbox Management",
       "Competitor Analysis",
-      "Performance Report",
+      "Monthly Performance Report",
       "Basic Ad Campaign Setup",
     ],
+    price: "PKR 40,000 / 20 Days",
   },
 
   {
     title: "Premium Package",
-    subtitle: "Best for Established Businesses",
+    description:
+      "Best for Established Businesses & Brands.",
     duration: "Monthly",
-    price: "PKR 100,000",
     platforms: [
       "Facebook",
       "Instagram",
@@ -274,22 +317,24 @@ const socialPackages = [
       "30 Animated Posts",
       "30 Reels / AI Videos",
       "Premium Graphic Designing",
-      "Advanced Content Marketing",
-      "Daily Stories",
-      "Complete Social Media Management",
-      "Advanced SEO",
+      "Advanced Content Marketing Strategy",
+      "Daily Stories & Audience Engagement",
+      "Full Social Media Management",
+      "Advanced SEO Optimization",
       "Complete Inbox Handling",
-      "Competitor Research",
-      "Analytics Reports",
+      "Competitor Research & Market Analysis",
+      "Ad Campaign Management Support",
+      "Detailed Analytics & Growth Reports",
       "Priority Support",
     ],
+    price: "PKR 100,000 / Month",
   },
 
   {
     title: "Enterprise Package",
-    subtitle: "For Large Companies & Multi-Brand Businesses",
+    description:
+      "For Large Companies & Multi-Brand Businesses.",
     duration: "Monthly",
-    price: "Starting From PKR 150,000",
     platforms: [
       "Facebook",
       "Instagram",
@@ -308,15 +353,20 @@ const socialPackages = [
       "Custom Reporting Dashboard",
       "Priority Support & Consultation",
     ],
+    price: "Starting From PKR 150,000 / Month",
   },
 ];
+
+/* =====================================================
+   CCNA PACKAGES
+===================================================== */
 
 const ccnaPackages = [
   {
     title: "Basic Package",
-    price: "PKR 20,000",
     description:
       "Perfect for beginners who want to start their networking career with CCNA fundamentals.",
+    price: "PKR 20,000",
     features: [
       "CCNA 200-301 Complete Theory",
       "Networking Fundamentals",
@@ -328,11 +378,12 @@ const ccnaPackages = [
       "Course Completion Certificate",
     ],
   },
+
   {
     title: "Standard Package",
-    price: "PKR 35,000",
     description:
       "Ideal for students who want practical networking skills along with complete CCNA training.",
+    price: "PKR 35,000",
     features: [
       "Everything in Basic Package",
       "Practical Lab Sessions",
@@ -346,11 +397,12 @@ const ccnaPackages = [
       "Course Completion Certificate",
     ],
   },
+
   {
     title: "Premium Package",
-    price: "PKR 50,000",
     description:
       "Best choice for students preparing for jobs and Cisco certification with advanced practical training.",
+    price: "PKR 50,000",
     features: [
       "Everything in Standard Package",
       "Real Cisco Device Practice",
@@ -366,11 +418,12 @@ const ccnaPackages = [
       "Certificate of Course Completion",
     ],
   },
+
   {
     title: "Professional Package",
-    price: "PKR 65,000",
     description:
       "Complete career-focused CCNA package with advanced labs, interview preparation, and career support.",
+    price: "PKR 65,000",
     features: [
       "Complete CCNA 200-301 Training",
       "Unlimited Practical Labs",
@@ -391,11 +444,16 @@ const ccnaPackages = [
   },
 ];
 
-const cyberSecurityPackages = [
+/* =====================================================
+   CYBER SECURITY PACKAGES
+===================================================== */
+
+const cyberPackages = [
   {
     title: "Basic Security",
     price: "PKR 25,000",
-    punchline: "Identify Risks. Strengthen Your Security.",
+    punchline:
+      "Identify Risks. Strengthen Your Security.",
     features: [
       "Security Risk Assessment",
       "Website Security Check",
@@ -411,7 +469,8 @@ const cyberSecurityPackages = [
   {
     title: "Standard Security",
     price: "PKR 60,000",
-    punchline: "Find Vulnerabilities Before Hackers Do.",
+    punchline:
+      "Find Vulnerabilities Before Hackers Do.",
     features: [
       "Everything in Basic",
       "Vulnerability Assessment",
@@ -429,7 +488,8 @@ const cyberSecurityPackages = [
   {
     title: "Premium Security",
     price: "PKR 120,000",
-    punchline: "Advanced Protection for Your Digital Environment.",
+    punchline:
+      "Advanced protection for businesses and organizations.",
     features: [
       "Everything in Standard",
       "Advanced VAPT",
@@ -449,362 +509,298 @@ const cyberSecurityPackages = [
   },
 ];
 
-export default function Page() {
+/* =====================================================
+   REUSABLE SWIPER
+===================================================== */
+
+function PackageSwiper({
+  data,
+  type = "package",
+}) {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-100 py-10 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <Swiper
+      modules={[
+        EffectCoverflow,
+        Pagination,
+        Autoplay,
+      ]}
+      effect="coverflow"
+      grabCursor={true}
+      centeredSlides={true}
+      slidesPerView="auto"
+      loop={true}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 140,
+        modifier: 1.2,
+        slideShadows: false,
+      }}
+      className="package-swiper"
+    >
+      {data.map((item, index) => (
+        <SwiperSlide
+          key={index}
+          className="!w-[285px] sm:!w-[330px] lg:!w-[350px]"
+        >
+          <div className="package-card">
 
-        {/* Heading */}
-        <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-600">
-            Corvit Tech Solutions
-          </h1>
-
-          <p className="mt-4 text-gray-600 text-base sm:text-lg">
-            Complete Website Development & AI Video Production Services
-          </p>
-
-          <div className="w-28 h-1 bg-red-600 rounded-full mx-auto mt-5"></div>
-        </div>
-
-        {/* Website Services */}
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
-          Website Development Services
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition duration-300 flex flex-col"
-            >
-              <h2 className="text-2xl font-bold text-red-600 mb-4">
-                {service.title}
-              </h2>
-
-              <p className="text-gray-600 mb-4">
-                <strong>Purpose:</strong> {service.purpose}
-              </p>
-
-              <h3 className="font-bold mb-3">Features</h3>
-
-              <ul className="space-y-2 text-gray-700 flex-grow">
-                {service.features.map((feature, i) => (
-                  <li key={i}>✔ {feature}</li>
-                ))}
-              </ul>
-
-              <div className="mt-6 bg-red-50 rounded-xl p-4">
-                <p className="font-bold text-red-600">
-                  {service.price}
-                </p>
-
-                <hr className="my-3" />
-
-                <p className="font-semibold">
-                  {service.delivery}
-                </p>
-              </div>
+            {/* Top Icon */}
+            <div className="package-icon">
+              {type === "ccna"
+                ? "CCNA"
+                : type === "cyber"
+                ? "🛡️"
+                : type === "ai"
+                ? "AI"
+                : type === "social"
+                ? "📱"
+                : "🌐"}
             </div>
-          ))}
-        </div>
-        {/* AI Video Packages */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
-            AI Video Production Packages
-          </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            {packages.map((pkg, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition duration-300 flex flex-col"
-              >
-                <div>
-                  <h2 className="text-2xl font-bold text-red-600">
-                    {pkg.title}
-                  </h2>
+            {/* Title */}
+            <h3 className="package-title">
+              {item.title}
+            </h3>
 
-                  <p className="text-sm font-semibold text-gray-700 mt-2">
-                    {pkg.subtitle}
-                  </p>
+            {/* Description / Punchline */}
+            {(item.description || item.punchline) && (
+              <p className="package-description">
+                “{item.description || item.punchline}”
+              </p>
+            )}
 
-                  <p className="text-gray-600 mt-4 leading-7">
-                    {pkg.description}
-                  </p>
+            {/* Price */}
+            <div className="package-price-box">
+              <p>PACKAGE PRICE</p>
+              <h4>{item.price}</h4>
+            </div>
 
-                  <div className="mt-5 space-y-2">
-                    <p>
-                      <span className="font-semibold"> Duration:</span>{" "}
-                      {pkg.duration}
-                    </p>
-
-                    <p>
-                      <span className="font-semibold"> Video Quality:</span>{" "}
-                      {pkg.quality}
-                    </p>
-                  </div>
-
-                  <h3 className="text-lg font-bold mt-6 mb-3">
-                    Features
-                  </h3>
-
-                  <ul className="space-y-2 text-gray-700">
-                    {pkg.features.map((feature, i) => (
-                      <li key={i}>✔ {feature}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mt-6 bg-red-50 rounded-xl p-4 border border-red-100">
-                  <p className="text-xl font-bold text-red-600">
-                    {pkg.price}
-                  </p>
-                </div>
+            {/* Extra information */}
+            {item.duration && (
+              <div className="package-extra">
+                <span>Duration</span>
+                <strong>{item.duration}</strong>
               </div>
-            ))}
-          </div>
+            )}
 
-        </div>
+            {item.quality && (
+              <div className="package-extra">
+                <span>Video Quality</span>
+                <strong>{item.quality}</strong>
+              </div>
+            )}
 
-        {/* Social Media Management */}
+            {item.platforms && (
+              <div className="package-platforms">
+                <h4>Platforms</h4>
 
-        <div className="mt-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-red-600">
-              Social Media Management Packages
-            </h2>
-
-            <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
-              Professional Social Media Management for Facebook, Instagram, TikTok,
-              YouTube, LinkedIn & Pinterest.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-
-            {socialPackages.map((pkg, index) => (
-
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col"
-              >
-
-                <h2 className="text-2xl font-bold text-red-600">
-                  {pkg.title}
-                </h2>
-
-                <p className="text-sm font-semibold text-gray-700 mt-2">
-                  {pkg.subtitle}
-                </p>
-
-                <div className="mt-4 space-y-2">
-                  <p>
-                    <span className="font-bold"> Duration:</span> {pkg.duration}
-                  </p>
-
-                  <p>
-                    <span className="font-bold"> Price:</span> {pkg.price}
-                  </p>
-                </div>
-
-                <div className="mt-5">
-                  <h3 className="font-bold text-lg">
-                    Platforms
-                  </h3>
-
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {pkg.platforms.map((platform, i) => (
-                      <span
-                        key={i}
-                        className="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-semibold"
-                      >
+                <div className="platform-list">
+                  {item.platforms.map(
+                    (platform, i) => (
+                      <span key={i}>
                         {platform}
                       </span>
-                    ))}
-                  </div>
+                    )
+                  )}
                 </div>
-
-                <div className="mt-6 flex-grow">
-                  <h3 className="font-bold text-lg mb-3">
-                    Features
-                  </h3>
-
-                  <ul className="space-y-2 text-gray-700">
-                    {pkg.features.map((feature, i) => (
-                      <li key={i}>✔ {feature}</li>
-                    ))}
-                  </ul>
-                </div>
-                </div>
-
-            ))}
-
-          </div>
-        </div>
-
-
-
-
-        {/* CCNA Packages */}
-
-        {/* ===================== CCNA Training Packages ===================== */}
-
-        <div className="mt-20">
-          {/* Heading */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-red-600">
-              CCNA Training Packages
-            </h2>
-
-            <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
-              Build your networking career with our industry-focused CCNA training
-              packages. Learn Cisco networking from basic concepts to advanced
-              practical labs with expert instructors.
-            </p>
-
-            <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
-          </div>
-
-          {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {ccnaPackages.map((pkg, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 flex flex-col h-full hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
-              >
-                {/* Content */}
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-bold text-red-600 mb-3">
-                    {pkg.title}
-                  </h3>
-
-                  <p className="text-gray-600 leading-7 mb-5">
-                    {pkg.description}
-                  </p>
-
-                  <div className="bg-red-50 rounded-xl p-4 mb-5">
-                    <p className="font-bold text-red-600">💰 Price</p>
-                    <p className="text-gray-700">{pkg.price}</p>
-                  </div>
-
-                  <h4 className="font-semibold text-lg mb-3">
-                    Services Included
-                  </h4>
-
-                  <ul className="space-y-2 text-gray-700">
-                    {pkg.features.map((feature, i) => (
-                      <li key={i}>✔ {feature}</li>
-                    ))}
-                  </ul>
-                </div>
-                </div>
-            ))}
-          </div>
-        </div>
-
-
-      </div>
-
-      {/* ================= CYBER SECURITY PACKAGES ================= */}
-
-      <div className="mt-20">
-
-        {/* Heading */}
-
-        <div className="text-center mb-12 px-2">
-
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-red-600">
-            Cyber Security Packages
-          </h2>
-
-          <p className="mt-4 text-sm sm:text-base lg:text-lg text-gray-600 leading-7 max-w-3xl mx-auto">
-            Protect your digital environment with professional security
-            assessments, vulnerability testing, penetration testing, and
-            advanced security solutions.
-          </p>
-
-          <div className="w-24 h-1 bg-red-600 mx-auto mt-5 rounded-full"></div>
-
-        </div>
-
-
-        {/* Cyber Security Cards */}
-
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
-
-          {cyberSecurityPackages.map((pkg, index) => (
-
-            <div
-              key={index}
-              className="flex flex-col bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 sm:p-6"
-            >
-
-              {/* Package Title */}
-
-              <h3 className="text-xl sm:text-2xl font-bold text-red-600 mb-4">
-                {pkg.title}
-              </h3>
-
-
-              {/* Price */}
-
-              <div className="bg-red-50 rounded-xl p-4 mb-5">
-
-                <p className="font-bold text-red-600 text-lg">
-                  💰 Price
-                </p>
-
-                <p className="text-gray-800 font-semibold mt-1">
-                  {pkg.price}
-                </p>
-
               </div>
+            )}
 
-
-              {/* Services */}
-
-              <h4 className="text-lg font-bold text-gray-800 mb-4">
-                Services Included
+            {/* Features */}
+            <div className="package-features">
+              <h4>
+                What's Included?
               </h4>
 
-              <ul className="space-y-2 text-sm sm:text-base text-gray-700 flex-grow">
-
-                {pkg.features.map((feature, i) => (
-
-                  <li
-                    key={i}
-                    className="flex items-start gap-2 leading-6"
-                  >
-
-                    <span className="text-red-600 font-bold">
-                      ✓
-                    </span>
-
-                    <span>
+              <ul>
+                {item.features.map(
+                  (feature, i) => (
+                    <li key={i}>
+                      <span>✓</span>
                       {feature}
-                    </span>
-
-                  </li>
-
-                ))}
-
+                    </li>
+                  )
+                )}
               </ul>
+            </div>
+
+            {/* Button */}
+            {/* <button className="package-button">
+              {type === "ccna"
+                ? "Enroll Now"
+                : "Get Started"}
+            </button> */}
+
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+}
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+function SectionHeading({
+  title,
+  description,
+}) {
+  return (
+    <div className="services-heading">
+
+      <div className="heading-badge">
+        ✦ Corvit Tech Solutions
+      </div>
+
+      <h2>{title}</h2>
+
+      <p>{description}</p>
+
+      <div className="heading-line"></div>
+
+    </div>
+  );
+}
+
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+export default function ServicesPage() {
+  return (
+    <main className="services-page">
+
+      {/* =================================================
+          WEBSITE DEVELOPMENT
+      ================================================= */}
+
+      <section className="service-section">
+
+        <SectionHeading
+          title="Website Development Services"
+          description="Professional websites designed to help businesses build a powerful online presence."
+        />
+
+        <PackageSwiper
+          data={services}
+          type="website"
+        />
+
+      </section>
 
 
-              {/* Punchline */}
+      {/* =================================================
+          AI VIDEO
+      ================================================= */}
 
-              <div className="mt-6 bg-gray-50 border-l-4 border-red-600 rounded-lg p-4">
+      <section className="service-section">
 
-                <p className="text-gray-700 italic font-medium text-sm sm:text-base">
-                  “{pkg.punchline}”
-                </p>
+        <SectionHeading
+          title="AI Video Production Packages"
+          description="Transforming Ideas Into Powerful AI Videos for social media, brands and businesses."
+        />
 
-              </div>
-                  </div>
-                ))}
-                </div>
-                </div>
-                </section>
+        <PackageSwiper
+          data={aiPackages}
+          type="ai"
+        />
+
+      </section>
+
+
+      {/* =================================================
+          SOCIAL MEDIA
+      ================================================= */}
+
+      <section className="service-section">
+
+        <SectionHeading
+          title="Social Media Management Packages"
+          description="Professional social media management for businesses, startups and established brands."
+        />
+
+        <PackageSwiper
+          data={socialPackages}
+          type="social"
+        />
+
+      </section>
+
+
+      {/* =================================================
+          CCNA
+      ================================================= */}
+
+      <section className="service-section">
+
+        <SectionHeading
+          title="CCNA Training Packages"
+          description="Choose the perfect CCNA package based on your learning goals, practical networking needs and career objectives."
+        />
+
+        <PackageSwiper
+          data={ccnaPackages}
+          type="ccna"
+        />
+
+      </section>
+
+
+      {/* =================================================
+          CYBER SECURITY
+      ================================================= */}
+
+      <section className="service-section">
+
+        <SectionHeading
+          title="Cyber Security Packages"
+          description="Identify vulnerabilities, strengthen security and protect your digital infrastructure."
+        />
+
+        <PackageSwiper
+          data={cyberPackages}
+          type="cyber"
+        />
+
+      </section>
+
+
+      {/* =================================================
+          BOTTOM CTA
+      ================================================= */}
+
+      <section className="services-cta">
+
+        <div>
+          <span>
+            CORVIT TECH SOLUTIONS
+          </span>
+
+          <h2>
+            Ready to Build Something Powerful?
+          </h2>
+
+          <p>
+            Choose a service package and let's
+            turn your idea into reality.
+          </p>
+
+          <button>
+            Contact Us
+          </button>
+        </div>
+
+      </section>
+
+    </main>
   );
 }
