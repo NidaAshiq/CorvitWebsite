@@ -53,7 +53,7 @@ export default function Home() {
 
         <div className="services bg-[#fff8f8] py-10">
 
-          <h1 className="text-center text-4xl font-bold text-red-600 mb-8">
+          <h1 className="text-center text-4xl font-extrabold text-red-600 mb-8">
             Our Services
           </h1>
 
