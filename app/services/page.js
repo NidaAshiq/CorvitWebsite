@@ -21,12 +21,18 @@ const services = [
   {
     title: "Landing Page",
     purpose:
-      "Designed for advertising campaigns and lead generation.",
+      "A high-converting single-page website designed for businesses, products, services, advertising campaigns, and lead generation.",
     features: [
-      "Single-page Design",
+      "Modern Single-Page Design",
+      "Responsive Design for Mobile & Desktop",
+      "Hero Section with Strong CTA",
       "WhatsApp Button Integration",
-      "Lead Generation Forms",
-      "Strong Call-to-Action (CTA)",
+      "Lead Generation Contact Form",
+      "Services / Features Section",
+      "Customer Testimonials Section",
+      "Google Maps Integration",
+      "Social Media Links",
+      "Basic SEO Setup",
     ],
     price: "PKR 15,000 – 30,000",
     delivery: "1–3 Days",
@@ -35,12 +41,18 @@ const services = [
   {
     title: "Portfolio Website",
     purpose:
-      "Showcase personal work, projects, and achievements.",
+      "A professional portfolio website to showcase your personal work, skills, projects, achievements, experience, and professional profile.",
     features: [
-      "About Section",
+      "Modern Responsive Design",
+      "Professional Home Section",
+      "About Me / About Us Section",
+      "Skills & Expertise Section",
       "Project Gallery",
-      "Testimonials",
+      "Project Details Section",
+      "Testimonials Section",
+      "Resume / CV Section",
       "Social Media Links",
+      "Contact Form",
     ],
     price: "PKR 25,000 – 45,000",
     delivery: "3–5 Days",
@@ -49,12 +61,18 @@ const services = [
   {
     title: "Business Website",
     purpose:
-      "Present company information and services online.",
+      "A professional multi-page website designed to present your company, services, products, and business information online.",
     features: [
-      "5–10 Pages",
+      "5–10 Professional Pages",
+      "Responsive Mobile-Friendly Design",
+      "Home & About Sections",
+      "Services / Products Section",
       "WhatsApp Integration",
+      "Contact & Inquiry Form",
+      "Google Maps Integration",
       "Basic SEO Setup",
       "Social Media Integration",
+      "Testimonials Section",
     ],
     price: "PKR 35,000 – 60,000",
     delivery: "5–7 Days",
@@ -63,12 +81,18 @@ const services = [
   {
     title: "Corporate Website",
     purpose:
-      "Designed for large organizations and enterprises.",
+      "A professional corporate website built for organizations, companies, and enterprises that need a strong and trustworthy online presence.",
     features: [
-      "Departments Section",
-      "Careers Portal",
-      "Company News & Updates",
+      "10+ Professional Pages",
       "Advanced Responsive Design",
+      "Company Profile Section",
+      "Departments & Teams Section",
+      "Services & Solutions Section",
+      "Careers Portal",
+      "Job / Vacancy Listings",
+      "Company News & Updates",
+      "Contact & Inquiry Forms",
+      "Advanced SEO Structure",
     ],
     price: "PKR 60,000 – 120,000",
     delivery: "7–10 Days",
@@ -77,12 +101,18 @@ const services = [
   {
     title: "E-Commerce Website",
     purpose:
-      "Sell products and services online.",
+      "A complete online store that allows businesses to showcase products, manage customers, receive orders, and sell products online.",
     features: [
+      "Modern E-Commerce Design",
       "Product Catalog",
+      "Product Categories",
+      "Product Search & Filters",
       "Shopping Cart",
-      "Payment Gateway",
-      "Customer Accounts",
+      "Wishlist Functionality",
+      "Customer Registration & Login",
+      "Online Payment Integration",
+      "Order Management",
+      "WhatsApp Order Support",
     ],
     price: "PKR 50,000 – 100,000",
     delivery: "7–12 Days",
@@ -91,12 +121,18 @@ const services = [
   {
     title: "Educational Website (LMS)",
     purpose:
-      "For schools, academies, and online learning platforms.",
+      "A complete learning platform designed for schools, academies, institutes, tutors, and online education businesses.",
     features: [
+      "Modern Educational Platform",
       "Course Management",
-      "Student Portal",
+      "Student Registration & Login",
+      "Student Dashboard",
+      "Teacher / Instructor Dashboard",
+      "Online Lessons & Materials",
       "Quizzes & Assessments",
-      "Certificates",
+      "Progress Tracking",
+      "Course Certificates",
+      "Online Payment Integration",
     ],
     price: "PKR 70,000 – 150,000+",
     delivery: "10–20 Days",
@@ -105,12 +141,18 @@ const services = [
   {
     title: "News & Magazine Website",
     purpose:
-      "Publish news, blogs, and articles.",
+      "A content-focused website for publishing news, articles, blogs, magazines, announcements, and regularly updated information.",
     features: [
-      "Categories Management",
+      "Modern News Layout",
+      "Categories & Subcategories",
+      "Article Publishing System",
       "Search Functionality",
       "Author Profiles",
+      "Featured Articles",
+      "Latest News Section",
       "Blog Management",
+      "Image & Media Management",
+      "Social Media Sharing",
     ],
     price: "PKR 50,000 – 90,000",
     delivery: "7–10 Days",
@@ -119,12 +161,18 @@ const services = [
   {
     title: "Booking Website",
     purpose:
-      "Manage appointments and reservations online.",
+      "An online booking platform that allows customers to check availability, select a time slot, make reservations, and manage appointments.",
     features: [
+      "Online Booking System",
       "Booking Calendar",
+      "Available Time Slots",
+      "Customer Registration & Login",
+      "Appointment Management",
       "Automated Notifications",
       "Customer Dashboard",
-      "Online Payments",
+      "Booking Confirmation",
+      "Online Payment Integration",
+      "WhatsApp Support",
     ],
     price: "PKR 45,000 – 80,000",
     delivery: "5–10 Days",
@@ -133,18 +181,23 @@ const services = [
   {
     title: "Membership Website",
     purpose:
-      "Offer subscription plans and exclusive content.",
+      "A subscription-based platform where users can register, choose membership plans, access exclusive content, and manage their accounts.",
     features: [
       "User Registration & Login",
-      "Membership Plans",
+      "User Dashboard",
+      "Multiple Membership Plans",
+      "Subscription Management",
       "Premium Content Access",
+      "Member-Only Pages",
       "Payment Integration",
+      "Profile Management",
+      "Membership Expiry Management",
+      "Email Notifications",
     ],
     price: "PKR 60,000 – 120,000",
     delivery: "7–14 Days",
   },
 ];
-
 /* =====================================================
    AI VIDEO PACKAGES
 ===================================================== */
